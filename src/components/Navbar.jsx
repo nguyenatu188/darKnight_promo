@@ -1,10 +1,39 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { logo } from '../assets'
 import { Link } from "react-router-dom"
 import { navLinks } from '../constants'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
+  const [toggle, setToggle] = useState(false)
+
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      let isInNavSection = false
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && navLinks.some((nav) => nav.id === entry.target.id)) {
+          setActive(entry.target.id)
+          isInNavSection = true
+        }
+      })
+
+      if (!isInNavSection) {
+        setActive('') // Reset active when in a non-navLinks section
+      }
+    }
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.75, // Increase to require more of the section to be visible
+      rootMargin: "0px 0px -50% 0px", // Adjusts the "visible" area to start earlier
+    })    
+
+    navLinks.forEach((nav) => {
+      const section = document.getElementById(nav.id)
+      if (section) observer.observe(section)
+    })
+
+    return () => observer.disconnect()
+  }, [])
   return (
     <>
       <nav className='w-full flex items-center fixed top-0 z-20 bg-neutral-900'>

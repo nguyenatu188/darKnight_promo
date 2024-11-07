@@ -6,6 +6,7 @@ import Reviews from "./Reviews"
 import KeyFeatures from "./KeyFeatures"
 import SystemRequirements from "./SystemRequirements"
 import Contact from "./Contact"
+import Side from "./Side"
 
 export {
   Navbar,
@@ -15,5 +16,6 @@ export {
   Reviews,
   KeyFeatures,
   SystemRequirements,
-  Contact
+  Contact,
+  Side
 }

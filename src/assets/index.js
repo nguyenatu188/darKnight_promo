@@ -12,5 +12,8 @@ import combat from './combat.gif'
 import gameplay from './gameplay.gif'
 import mc_bg from './mc.png'
 import tb from './text_border.png'
+import skill1 from './skill1.gif'
+import skill2 from './skill2.gif'
+import skill3 from './skill3.gif' 
 
-export { bg, name, logo, maiLinh, left_vines, right_vines, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb }
+export { bg, name, logo, maiLinh, left_vines, right_vines, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb, skill1, skill2, skill3 }

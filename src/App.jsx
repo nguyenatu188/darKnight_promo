@@ -1,6 +1,6 @@
 
 import { BrowserRouter } from "react-router-dom"
-import { Navbar, Hero, About, Characters, Reviews, KeyFeatures, SystemRequirements, Contact } from "./components"
+import { Navbar, Hero, About, Characters, Reviews, KeyFeatures, SystemRequirements, Contact, Side } from "./components"
 function App() {
 
   return (
@@ -15,6 +15,7 @@ function App() {
         <div className="bg-mc-bg bg-cover bg-no-repeat bg-bottom">
           <Characters/>
         </div>
+        <Side/>
         <Reviews/>   
         <SystemRequirements/>
         <Contact/>
