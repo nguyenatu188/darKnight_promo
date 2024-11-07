@@ -1,0 +1,16 @@
+import bg from './bg.jpeg'
+import name from './name.png'
+import logo from './logo.png'
+import maiLinh from './maiLinh.mp4'
+import left_vines from './left_vines.png'
+import right_vines from './right_vines.png'
+import bottom_fire from './bottom_darkFire_bg.png'
+import top_fire from './top_darkFire_bg.png'
+import world from './world.gif'
+import story from './story.gif'
+import combat from './combat.gif'
+import gameplay from './gameplay.gif'
+import mc_bg from './mc.png'
+import tb from './text_border.png'
+
+export { bg, name, logo, maiLinh, left_vines, right_vines, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb }
