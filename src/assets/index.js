@@ -18,10 +18,14 @@ import skill1 from './skill1.gif'
 import skill2 from './skill2.gif'
 import skill3 from './skill3.gif'
 import demon from './demon.gif'
-import dragon from './dragon.gif'
 import fireSkull from './fire_skull.gif'
 import ghost from './ghost.gif'
-import gothicHero from './gothic_hero.gif'
 import particles from './particles.gif'
+import review1 from './review1.png'
+import review2 from './review2.png'
+import review3 from './review3.png'
+import nsx from './nsx.png'
+import publisher from './publisher.png'
+import sixteen from './16.png'
 
-export { bg, name, logo, maiLinh, left_vines, right_vines, top_tornEdge, bottom_tornEdge, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb, skill1, skill2, skill3, dragon, demon, fireSkull, ghost, gothicHero, particles }
+export { publisher, sixteen, nsx, bg, name, logo, maiLinh, left_vines, right_vines, top_tornEdge, bottom_tornEdge, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb, skill1, skill2, skill3, demon, fireSkull, ghost, particles, review1, review2, review3 }

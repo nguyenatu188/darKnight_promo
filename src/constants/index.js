@@ -1,4 +1,4 @@
-import { world, story, combat, gameplay, demon, ghost, dragon, gothicHero, particles, fireSkull } from "../assets"
+import { world, story, combat, gameplay, demon, ghost, particles, fireSkull, review1, review2, review3 } from "../assets"
 
 export const navLinks = [
   {
@@ -16,10 +16,6 @@ export const navLinks = [
   {
     id: "review",
     title: "Reviews",
-  },
-  {
-    id: "systemRequirement",
-    title: "System Requirements",
   }
 ]
 
@@ -62,5 +58,26 @@ export const monsters = [
   { name: 'Particles',
     image: particles,
     description: 'Description 6'
+  },
+]
+
+export const reviews = [
+  {
+    image: review1,
+    content: 'This game is incredibly immersive and visually stunning!',
+    name: 'Alice Johnson',
+    occupation: 'Game Reviewer',
+  },
+  {
+    image: review2,
+    content: 'A refreshing experience in the gaming industry. A must-try!',
+    name: 'Phê game',
+    occupation: 'Kênh review game',
+  },
+  {
+    image: review3,
+    content: 'An innovative and addictive game with captivating gameplay.',
+    name: 'Tyson Van Ngo',
+    occupation: 'Pro Gamer',
   },
 ]

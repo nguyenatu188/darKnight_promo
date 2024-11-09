@@ -1,9 +1,9 @@
-import React from 'react';
-import { SectionWrapper } from '../hoc';
-import { monsters } from '../constants';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react'
+import { SectionWrapper } from '../hoc'
+import { monsters } from '../constants'
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const Side = () => {
   const settings = {
@@ -53,4 +53,4 @@ const Side = () => {
   );
 }
 
-export default SectionWrapper(Side, 'character');
+export default SectionWrapper(Side, 'character')
