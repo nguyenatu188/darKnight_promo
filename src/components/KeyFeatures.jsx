@@ -24,10 +24,10 @@ const KeyFeatures = () => {
             <img src={keyFeature.gif} alt={keyFeature.title} className="w-96 h-96 torn-border"/>
             
             <div className="flex flex-col items-start">
-              <p className='text-4xl text-[#a68426] tracking-widest' style={{ fontFamily: 'enchantedLand' }}>
+              <p className='text-5xl text-[#a68426]'>
                 {keyFeature.title}
               </p>
-              <p className='text-2xl text-secondary tracking-wider' style={{ fontFamily: 'enchantedLand' }}>
+              <p className='text-3xl text-secondary mt-5'>
                 {keyFeature.desc}
               </p>
             </div>

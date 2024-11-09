@@ -5,7 +5,6 @@ import { navLinks } from '../constants'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
-  const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
     const handleIntersection = (entries) => {
@@ -49,11 +48,11 @@ const Navbar = () => {
           <img src={logo} alt="logo" 
             className="w-20 h-20 object-contain bg-[#a68426] transition-transform duration-100 hover:scale-125" />
         </Link>
-        <ul className='flex flex-row gap-10 list-none'>
+        <ul className='flex flex-row gap-14 list-none'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.id ? "text-[#a68426]" : "text-secondary"} hover:text-[#a68426] text-[20px] font-medium cursor-pointer relative`} // Add 'relative' here
+              className={`${active === nav.id ? "text-[#a68426]" : "text-secondary"} hover:text-[#a68426] text-4xl font-medium cursor-pointer relative`} // Add 'relative' here
               onClick={() => setActive(nav.id)}
             >
               <a href={`#${nav.id}`} className="relative inline-block">

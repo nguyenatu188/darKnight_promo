@@ -6,15 +6,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Billhead";
   scroll-behavior: smooth;
   color-scheme: dark;
 }
 
 @font-face {
-  font-family: 'oldLondon';
-  src: url('./assets/fonts/OldLondon.ttf') format('truetype'),
-       url('./assets/fonts/OldLondon.otf') format('opentype');
+  font-family: 'Billhead';
+  src: url('./assets/fonts/UTMBillhead1910.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,13 +21,6 @@
 @font-face {
   font-family: 'beyondWonderland';
   src: url('./assets/fonts/BeyondWonderland.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'enchantedLand';
-  src: url('./assets/fonts/EnchantedLand.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -70,9 +62,45 @@ a:hover span {
 
 .torn-border {
   width: 480px;
-  height: 320px;
+  height: 300px;
   mask-image: url('./assets/torn-border-mask.png'); /* Path to your mask image */
   mask-size:cover;
   -webkit-mask-image: url('./assets/torn-border-mask.png'); /* For WebKit browsers */
   -webkit-mask-size: cover;
 }
+
+.character-carousel {
+  width: 80%;         /* Adjust to make space for off-screen slides */
+  margin: auto;
+  overflow: hidden;   /* Prevent horizontal scrolling */
+}
+
+.character-card {
+  height: 620px; /* Set a fixed height for all cards */
+  width: 370px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-image {
+  height: 250px; /* Limit image height */
+  object-fit: cover; /* Ensure images cover the allocated space without distortion */
+  border-radius: 10px;
+}
+
+/* Scale effect on the center slide */
+.slick-center .character-card {
+  transform: scale(1.2); /* Enlarges the center slide */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.character-card img {
+  width: 450px;
+  height: 370px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+

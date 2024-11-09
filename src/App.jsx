@@ -1,6 +1,6 @@
 
 import { BrowserRouter } from "react-router-dom"
-import { Navbar, Hero, About, Characters, Reviews, KeyFeatures, SystemRequirements, Contact, Side } from "./components"
+import { Navbar, Hero, About, Main, Reviews, KeyFeatures, SystemRequirements, Contact, Side } from "./components"
 function App() {
 
   return (
@@ -13,7 +13,7 @@ function App() {
         <About/>
         <KeyFeatures/>
         <div className="bg-mc-bg bg-cover bg-no-repeat bg-bottom">
-          <Characters/>
+          <Main/>
         </div>
         <Side/>
         <Reviews/>   
