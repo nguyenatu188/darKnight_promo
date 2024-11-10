@@ -1,13 +1,12 @@
-import React from 'react'
-import { SectionWrapper } from '../hoc'
-import { monsters } from '../constants'
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import React from 'react';
+import { SectionWrapper } from '../hoc';
+import { monsters } from '../constants';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Side = () => {
   const settings = {
-    centerMode: true,
     centerPadding: '150px',
     slidesToShow: 3,
     infinite: true,
@@ -38,19 +37,17 @@ const Side = () => {
         <Slider {...settings}>
           {monsters.map((monster, index) => (
             <div key={index} className="p-4">
-              <div className="character-card bg-[#222] text-white text-center rounded-lg transition transform duration-300">
-                <img src={monster.image} alt={monster.name} className="character-image w-full" />
-                <h3 className="text-4xl font-bold">{monster.name}</h3>
-                <p className="text-2xl">{monster.description}</p>
+              <div className="flex flex-col justify-center items-center bg-[#222] text-white rounded-lg transition-transform duration-300 transform">
+                <img src={monster.image} alt={monster.name} className="h-64 w-64 object-cover rounded-lg mb-2" />
+                <h3 className="text-6xl" style={{ fontFamily: 'beyondWonderland' }}>{monster.name}</h3>
+                <p className="text-3xl mx-5 my-5">{monster.description}</p>
               </div>
-              
             </div>
-            
           ))}
         </Slider>
       </div>
     </div>
   );
-}
+};
 
-export default SectionWrapper(Side, 'character')
+export default SectionWrapper(Side, 'character');

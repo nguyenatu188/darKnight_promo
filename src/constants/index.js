@@ -45,21 +45,22 @@ export const keyFeatures = [
 export const monsters = [
   { name: 'Demon',
     image: demon,
-    description: 'Description 1' 
+    description: 'Demon là những sinh vật bóng tối, sở hữu sức mạnh tàn bạo và đôi cánh khổng lồ. Chúng lẩn khuất trong bóng tối, luôn sẵn sàng tấn công bất kỳ ai dám xâm nhập vào lãnh thổ của chúng.'
   },
   { name: 'Ghost',
     image: ghost,
-    description: 'Description 2'
+    description: 'Ghost là linh hồn lạc lõng, không có thân thể, chỉ còn lại một bóng ma đầy căm hận. Chúng xuất hiện bất chợt và có thể làm tê liệt nạn nhân bằng những cú chạm lạnh lẽo.'
   },
   { name: 'Fire Skull',
     image: fireSkull,
-    description: 'Description 4' 
+    description: 'Fire Skull là những cái đầu lâu cháy rực, đốt nóng mọi thứ nó chạm vào. Chúng bay lượn trong không trung, phun ra ngọn lửa chết chóc để tiêu diệt kẻ thù.'
   },
   { name: 'Particles',
     image: particles,
-    description: 'Description 6'
+    description: 'Particles là những thực thể vô hình được tạo thành từ những hạt bụi và bóng tối. Chúng di chuyển nhanh như gió, xâm nhập vào cơ thể kẻ thù và tàn phá mọi vật chất xung quanh.'
   },
 ]
+
 
 export const reviews = [
   {
