@@ -27,5 +27,7 @@ import review3 from './review3.png'
 import nsx from './nsx.png'
 import publisher from './publisher.png'
 import sixteen from './16.png'
+import tf from './tf.gif'
+import bf from './bf.gif'
 
-export { publisher, sixteen, nsx, bg, name, logo, maiLinh, left_vines, right_vines, top_tornEdge, bottom_tornEdge, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb, skill1, skill2, skill3, demon, fireSkull, ghost, particles, review1, review2, review3 }
+export { tf, bf, publisher, sixteen, nsx, bg, name, logo, maiLinh, left_vines, right_vines, top_tornEdge, bottom_tornEdge, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb, skill1, skill2, skill3, demon, fireSkull, ghost, particles, review1, review2, review3 }

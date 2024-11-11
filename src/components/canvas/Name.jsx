@@ -8,18 +8,18 @@ const Name = () => {
   const name = useGLTF('./name/preview.gltf')
   return (
     <mesh>
-      <hemisphereLight intensity={Math.PI} groundColor="black" />
-      <pointLight decay={0} position={[20, 10, 0]} intensity={Math.PI * 5} />
-      <spotLight
+      <pointLight
         decay={0}
-        position={[-100, 80, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={Math.PI}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <primitive object={name.scene} scale={5} position={[0, -2, 1]} rotation-y={0} />
+        position={[0, 0, 0]}
+        intensity={Math.PI * 5} />
+      <pointLight
+        position={[0, -1, 3]}
+        intensity={Math.PI * 5} />
+      <primitive 
+        object={name.scene}
+        scale={5}
+        position={[0, -2, 1]}
+        rotation-y={0} />
     </mesh>
   )
 }

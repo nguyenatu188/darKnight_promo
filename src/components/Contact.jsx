@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className='fixed flex flex-col justify-center items-center bottom-10 right-10 gap-10'>
       <a 
-        href="https://www.facebook.com/share/g/onovommG1sPtbLVJ/" 
+        href="https://www.facebook.com/profile.php?id=61568280970190" 
         target="_blank" 
         rel="noopener noreferrer"
       >
