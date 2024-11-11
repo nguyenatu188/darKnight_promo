@@ -5,34 +5,6 @@ import { navLinks } from '../constants'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
-
-  useEffect(() => {
-    const handleIntersection = (entries) => {
-      let isInNavSection = false
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && navLinks.some((nav) => nav.id === entry.target.id)) {
-          setActive(entry.target.id)
-          isInNavSection = true
-        }
-      })
-
-      if (!isInNavSection) {
-        setActive('') // Reset active when in a non-navLinks section
-      }
-    }
-
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.75, // Increase to require more of the section to be visible
-      rootMargin: "0px 0px -50% 0px", // Adjusts the "visible" area to start earlier
-    })    
-
-    navLinks.forEach((nav) => {
-      const section = document.getElementById(nav.id)
-      if (section) observer.observe(section)
-    })
-
-    return () => observer.disconnect()
-  }, [])
   return (
     <>
       <nav className='w-full flex items-center fixed top-0 z-20 bg-neutral-900'>
@@ -52,7 +24,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.id ? "text-[#a68426]" : "text-secondary"} hover:text-[#a68426] text-4xl font-medium cursor-pointer relative`} // Add 'relative' here
+              className={`text-secondary hover:text-[#a68426] text-4xl font-medium cursor-pointer relative`} // Add 'relative' here
               onClick={() => setActive(nav.id)}
             >
               <a href={`#${nav.id}`} className="relative inline-block">
