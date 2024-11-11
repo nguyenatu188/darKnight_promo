@@ -4,6 +4,8 @@ import logo from './logo.png'
 import maiLinh from './maiLinh.mp4'
 import left_vines from './left_vines.png'
 import right_vines from './right_vines.png'
+import top_vines from './top_vines.png'
+import bottom_vines from './bottom_vines.png'
 import top_tornEdge from './top_tornEdge.png'
 import bottom_tornEdge from './bottom_tornEdge.png'
 import top_fire from './top_darkFire_bg.png'
@@ -30,4 +32,4 @@ import sixteen from './16.png'
 import tf from './tf.gif'
 import bf from './bf.gif'
 
-export { tf, bf, publisher, sixteen, nsx, bg, name, logo, maiLinh, left_vines, right_vines, top_tornEdge, bottom_tornEdge, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb, skill1, skill2, skill3, demon, fireSkull, ghost, particles, review1, review2, review3 }
+export { tf, bf, publisher, sixteen, nsx, bg, name, logo, maiLinh, left_vines, right_vines, top_vines, bottom_vines, top_tornEdge, bottom_tornEdge, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb, skill1, skill2, skill3, demon, fireSkull, ghost, particles, review1, review2, review3 }

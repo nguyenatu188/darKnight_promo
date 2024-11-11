@@ -60,11 +60,16 @@ a:hover span {
   background: #555;
 }
 
-.torn-border {
-  width: 480px;
-  height: 300px;
-  mask-image: url('./assets/torn-border-mask.png'); /* Path to your mask image */
-  mask-size:cover;
-  -webkit-mask-image: url('./assets/torn-border-mask.png'); /* For WebKit browsers */
-  -webkit-mask-size: cover;
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #000000,
+    #434343
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #000000,
+    #434343
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

@@ -17,7 +17,7 @@ function App() {
         </div>
         <Side/>
         <Reviews/>
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-bottom mt-24">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-bottom mt-5 md:mt-24">
           <Footer/>
         </div>
         <Contact/>

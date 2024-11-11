@@ -20,6 +20,17 @@ export default {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [
+    require("tailwind-scrollbar"),
+    function ({ addComponents }) {
+      addComponents({
+        '.torn-border': {
+          maskImage: 'url("./src/assets/torn-border-mask.png")',  // Adjust path to your mask image
+          maskSize: 'cover',
+          WebkitMaskImage: 'url("./src/assets/torn-border-mask.png")',
+          WebkitMaskSize: 'cover',
+        },
+      });
+    },
+  ],
 }
-
