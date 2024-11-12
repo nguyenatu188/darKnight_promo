@@ -27,12 +27,19 @@ const KeyFeatures = () => {
               ${index % 2 === 0 ? 'mr-auto ml-3 md:text-right text-left' : 'ml-auto mr-3 md:text-left text-right'}
               w-[80%]`}
           >
-            <video
-              autoPlay
-              src={keyFeature.gif}
-              alt={keyFeature.title}
-              className="w-80 h-52 md:w-[30rem] md:h-80 torn-border hover:scale-110"
-            />
+            <div className="w-80 h-52 md:w-[30rem] md:h-80 torn-border overflow-hidden">
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                loading="lazy"
+              >
+                <source src={keyFeature.gif} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
             <div className="flex flex-col">
               <p className="text-2xl md:text-5xl text-[#a68426]">{keyFeature.title}</p>
               <p className="text-xl md:text-3xl text-secondary mt-5">{keyFeature.desc}</p>
@@ -40,7 +47,7 @@ const KeyFeatures = () => {
           </motion.div>
         ))}
       </div>
-      <img src={bf} alt="bottom_fire" className="w-full relativeS" />
+      <img src={bf} alt="bottom_fire" className="w-full relative" />
       <p
         className="absolute bottom-[20px] md:bottom-[100px] text-5xl md:text-7xl text-[#a68426] tracking-widest"
         style={{ fontFamily: 'beyondWonderland' }}
