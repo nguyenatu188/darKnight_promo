@@ -1,9 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { SectionWrapper } from '../hoc';
-import { top_fire, bottom_fire, tf, bf } from '../assets';
-import { keyFeatures } from '../constants';
-import { fadeIn } from '../utils/motion';
+import React from 'react'
+import { motion } from 'framer-motion'
+import { SectionWrapper } from '../hoc'
+import { top_fire, bottom_fire, tf, bf } from '../assets'
+import { keyFeatures } from '../constants'
+import { fadeIn } from '../utils/motion'
 
 const KeyFeatures = () => {
   return (
@@ -27,7 +27,8 @@ const KeyFeatures = () => {
               ${index % 2 === 0 ? 'mr-auto ml-3 md:text-right text-left' : 'ml-auto mr-3 md:text-left text-right'}
               w-[80%]`}
           >
-            <img
+            <video
+              autoPlay
               src={keyFeature.gif}
               alt={keyFeature.title}
               className="w-80 h-52 md:w-[30rem] md:h-80 torn-border hover:scale-110"
