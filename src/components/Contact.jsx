@@ -14,7 +14,7 @@ const Contact = () => {
         />
       </a>
       <a 
-        href="https://www.instagram.com/eldenring/" 
+        href="https://www.instagram.com/esercitolhaki/" 
         target="_blank" 
         rel="noopener noreferrer"
       >

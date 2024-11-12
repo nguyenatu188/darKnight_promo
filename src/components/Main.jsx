@@ -73,7 +73,7 @@ const Main = () => {
         </motion.div>
 
         {selectedSkill && (
-          <img src={selectedSkill} alt='skill' className='w-auto h-96'/>
+          <img src={selectedSkill} alt='skill' className='w-auto z-10 h-44 md:h-96 max-md:absolute max-md:ml-10 max-md:mb-48'/>
         )}
       </div>
       <img src={bottom_tornEdge} alt='bottom_tornEdge' className='w-full absolute -bottom-10 md:-bottom-16'/>
