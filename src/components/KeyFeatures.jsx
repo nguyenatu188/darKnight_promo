@@ -30,7 +30,7 @@ const KeyFeatures = () => {
             <img
               src={keyFeature.image}
               alt={keyFeature.title}
-              className="w-auto h-52 md:w-[27rem] md:h-80 object-cover torn-border block hover:scale-110"
+              className="w-auto h-52 md:w-[27rem] md:h-80 torn-border hover:scale-110"
             />
             <div className="flex flex-col">
               <p className="text-2xl md:text-5xl text-[#a68426]">{keyFeature.title}</p>

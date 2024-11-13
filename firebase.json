@@ -6,6 +6,21 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "headers": [
+      {
+        "source": "**/*.gif",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          },
+          {
+            "key": "Content-Type",
+            "value": "image/gif"
+          }
+        ]
+      }
+    ],
     "rewrites": [
       {
         "source": "**",
