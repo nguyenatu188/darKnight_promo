@@ -28,8 +28,7 @@ const KeyFeatures = () => {
               w-[80%]`}
           >
             <div
-              className="relative w-auto h-52 md:w-[27rem] md:h-80 bg-[#851818] overflow-hidden"
-              style={{ minHeight: '208px', minWidth: '208px' }} // Ensure minimum dimensions
+              className="relative w-72 h-52 md:w-[180rem] md:h-80 bg-[#851818] torn-border overflow-hidden"
             >
               <div 
                 className="absolute inset-0 w-full h-full"
