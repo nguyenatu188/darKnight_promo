@@ -27,7 +27,7 @@ const KeyFeatures = () => {
               ${index % 2 === 0 ? 'mr-auto ml-3 md:text-right text-left' : 'ml-auto mr-3 md:text-left text-right'}
               w-[80%]`}
           >
-            <div 
+            <div
               className="relative w-auto h-52 md:w-[27rem] md:h-80 bg-[#851818] overflow-hidden"
               style={{ minHeight: '208px', minWidth: '208px' }} // Ensure minimum dimensions
             >
