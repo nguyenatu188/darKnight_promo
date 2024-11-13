@@ -31,5 +31,6 @@ import publisher from './publisher.png'
 import sixteen from './16.png'
 import tf from './tf.gif'
 import bf from './bf.gif'
+import tbmask from './torn_border_mask.png'
 
-export { tf, bf, publisher, sixteen, nsx, bg, name, logo, maiLinh, left_vines, right_vines, top_vines, bottom_vines, top_tornEdge, bottom_tornEdge, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb, skill1, skill2, skill3, demon, fireSkull, ghost, particles, review1, review2, review3 }
+export { tbmask, tf, bf, publisher, sixteen, nsx, bg, name, logo, maiLinh, left_vines, right_vines, top_vines, bottom_vines, top_tornEdge, bottom_tornEdge, bottom_fire, top_fire, world, story, combat, gameplay, mc_bg, tb, skill1, skill2, skill3, demon, fireSkull, ghost, particles, review1, review2, review3 }

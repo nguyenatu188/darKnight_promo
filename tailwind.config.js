@@ -25,10 +25,10 @@ export default {
     function ({ addComponents }) {
       addComponents({
         '.torn-border': {
-          maskImage: 'url("./src/assets/torn-border-mask.png")',  // Adjust path to your mask image
-          maskSize: 'cover',
-          WebkitMaskImage: 'url("./src/assets/torn-border-mask.png")',
-          WebkitMaskSize: 'cover',
+          maskImage: "url('/src/assets/torn_border_mask.png')",
+          maskSize: "cover",
+          WebkitMaskImage: "url('/src/assets/torn_border_mask.png')",
+          WebkitMaskSize: "cover",
         },
       });
     },

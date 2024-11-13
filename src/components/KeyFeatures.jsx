@@ -27,21 +27,11 @@ const KeyFeatures = () => {
               ${index % 2 === 0 ? 'mr-auto ml-3 md:text-right text-left' : 'ml-auto mr-3 md:text-left text-right'}
               w-[80%]`}
           >
-            <div
-              className="relative w-72 h-52 md:w-[180rem] md:h-80 bg-[#851818] torn-border overflow-hidden"
-            >
-              <div 
-                className="absolute inset-0 w-full h-full"
-                style={{
-                  backgroundImage: `url(${keyFeature.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  transform: 'translate3d(0, 0, 0)', // Force GPU acceleration
-                  willChange: 'transform', // Optimize for animations
-                }}
-              />
-            </div>
+            <img
+              src={keyFeature.image}
+              alt={keyFeature.title}
+              className="w-auto h-52 md:w-[27rem] md:h-80 torn-border hover:scale-110"
+            />
             <div className="flex flex-col">
               <p className="text-2xl md:text-5xl text-[#a68426]">{keyFeature.title}</p>
               <p className="text-xl md:text-3xl text-secondary mt-5">{keyFeature.desc}</p>
@@ -49,7 +39,7 @@ const KeyFeatures = () => {
           </motion.div>
         ))}
       </div>
-      <img src={bf} alt="bottom_fire" className="w-full relative" />
+      <img src={bf} alt="bottom_fire" className="w-full relativeS" />
       <p
         className="absolute bottom-[20px] md:bottom-[100px] text-5xl md:text-7xl text-[#a68426] tracking-widest"
         style={{ fontFamily: 'beyondWonderland' }}
@@ -60,4 +50,4 @@ const KeyFeatures = () => {
   );
 };
 
-export default SectionWrapper(KeyFeatures, 'keyFeature')
+export default SectionWrapper(KeyFeatures, 'keyFeature');
