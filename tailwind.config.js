@@ -15,7 +15,7 @@ export default {
         "white-100": "#f3f3f3",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/bg.jpeg')",
+        "hero-pattern": "url('/src/assets/bg.png')",
         "mc-bg": "url('/src/assets/mc.png')",
       },
     },

@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaFacebookSquare, FaInstagram, FaDiscord } from "react-icons/fa";
+import React from 'react'
+import { FaFacebookSquare, FaInstagram, FaDiscord } from "react-icons/fa"
 
 const Contact = () => {
   return (
@@ -35,4 +35,4 @@ const Contact = () => {
   );
 }
 
-export default Contact;
+export default Contact

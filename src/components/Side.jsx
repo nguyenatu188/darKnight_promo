@@ -1,11 +1,15 @@
-import React from 'react';
-import { SectionWrapper } from '../hoc';
-import { monsters } from '../constants';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useRef } from 'react'
+import { SectionWrapper } from '../hoc'
+import { monsters } from '../constants'
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 
 const Side = () => {
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const sliderRef = useRef(null); // Create a ref for the slider
+
   const settings = {
     centerMode: true,
     centerPadding: '150px',
@@ -32,13 +36,11 @@ const Side = () => {
     ]
   };
 
-  const [currentSlide, setCurrentSlide] = React.useState(0);
-
   return (
     <div className='flex flex-col justify-center items-center'>
       <p className='text-5xl md:text-7xl text-[#a68426]' style={{ fontFamily: 'beyondWonderland' }}>Monsters</p>
-      <div className='w-full mt-5 md:mt-10 overflow-hidden'>
-        <Slider {...settings}>
+      <div className='relative w-full mt-5 md:mt-10 overflow-hidden'>
+        <Slider ref={sliderRef} {...settings}>
           {monsters.map((monster, index) => (
             <div key={index} className="p-4">
               <div
@@ -52,8 +54,24 @@ const Side = () => {
           ))}
         </Slider>
       </div>
+
+      {/* Navigation Arrows Below the Slider */}
+      <div className="flex mt-4 space-x-4">
+        <button
+          className="text-white bg-[#222] p-2 rounded-full"
+          onClick={() => sliderRef.current.slickPrev()}
+        >
+          <FaArrowLeft className='text-xl md:text-3xl' />
+        </button>
+        <button
+          className="text-white bg-[#222] p-2 rounded-full"
+          onClick={() => sliderRef.current.slickNext()}
+        >
+          <FaArrowRight className='text-xl md:text-3xl' />
+        </button>
+      </div>
     </div>
   );
 };
 
-export default SectionWrapper(Side, 'character');
+export default SectionWrapper(Side, 'character')

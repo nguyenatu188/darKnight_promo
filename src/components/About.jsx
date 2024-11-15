@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionWrapper } from '../hoc'
-import { maiLinh, left_vines, right_vines, bottom_vines, top_vines } from '../assets'
+import { video, left_vines, right_vines, bottom_vines, top_vines } from '../assets'
 import { textVariant } from '../utils/motion'
 import { motion } from 'framer-motion'
 
@@ -30,7 +30,7 @@ const About = () => {
 
             <img src={bottom_vines} alt='bottom-vines' className='block md:hidden w-80'/>
 
-            <video src={maiLinh} controls autoPlay />
+            <video src={video} className='w-auto  h-80' controls autoPlay />
 
             <img src={right_vines} alt='right-vines' className='block max-md:hidden w-96 h-96 mr-5'/>
           </div>

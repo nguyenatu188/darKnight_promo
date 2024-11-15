@@ -10,17 +10,6 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
   };
 };
 
-export const pointerAnimation = {
-  initial: { x: 0, y: 0 },
-  animate: { x: 30, y: 30 },
-  transition: {
-    duration: 1,
-    repeat: Infinity,
-    repeatType: 'reverse',
-    ease: "easeInOut",
-  },
-};
-
 export const textVariant = (delay) => {
   return {
     // hidden: When the animation starts, the text is hidden, slightly above its final position (y: -50) and fully transparent (opacity: 0).

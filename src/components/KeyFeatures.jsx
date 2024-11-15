@@ -19,7 +19,7 @@ const KeyFeatures = () => {
         {keyFeatures.map((keyFeature, index) => (
           <motion.div
             key={index}
-            variants={index % 2 === 0 ? fadeIn("right", "spring", index * 2, 3) : fadeIn("left", "spring", index * 2, 3)}
+            variants={index % 2 === 0 ? fadeIn("right", "spring", index * 2, 3) : fadeIn("left", "spring", index * 2, 2)}
             initial="hidden"
             animate="show"
             className={`flex ${index % 2 === 0 ? 'md:flex-row flex-col' : 'md:flex-row-reverse flex-col'}
@@ -50,4 +50,4 @@ const KeyFeatures = () => {
   );
 };
 
-export default SectionWrapper(KeyFeatures, 'keyFeature');
+export default SectionWrapper(KeyFeatures, 'keyFeature')
