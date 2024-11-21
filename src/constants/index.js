@@ -36,7 +36,7 @@ export const keyFeatures = [
   image: gameplay
 },
 {
-  title: "HỆ THỐNG COMBAT CĂNG VL CĂNG",
+  title: "HỆ THỐNG COMBAT căng cực",
   desc: "Hệ thống combat trong Dar knight được thiết kế cực kỳ kịch tính và căng thẳng. Bạn sẽ phải sử dụng mọi chiến thuật và kỹ năng để đối đầu với kẻ thù, từ những sinh vật méo mó bảo vệ ánh sáng cho đến các quái vật mạnh mẽ nhất. Mỗi trận chiến đều yêu cầu sự khéo léo và tính toán, từ việc chọn lựa vũ khí cho đến việc phối hợp các kỹ năng để chiến thắng. Đặc biệt, những cuộc đối đầu với boss sẽ là thử thách khó nhằn, yêu cầu bạn phải học hỏi từ thất bại để ngày càng mạnh mẽ hơn.",
   image: combat
 }
